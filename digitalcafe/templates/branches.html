@@ -1,0 +1,11 @@
+{% include "header.html" %}
+        <h1>Branches</h1>
+
+        <ui>
+            {% for branch in branches_list %}
+                <li><a href="productdetails?code={{branch['code']}}">{{branch["code"]}}</a></li>
+                <!--- mej mali nalang yung link na pupuntahan ikaw na bahala!--->
+            {% endfor %}
+        </ui>
+{% include "footer.html" %}
+
